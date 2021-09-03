@@ -1,0 +1,13 @@
+{
+    "name": "FootNav",
+    "alias": "footnav",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FootNav\\Providers\\FootNavServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
