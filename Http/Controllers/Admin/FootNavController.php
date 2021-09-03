@@ -21,10 +21,10 @@ class FootNavController extends Controller
             $request->check();
             $data = $request->post();
             $data["foot"] = $data["foot"] ?? [];
-            if(!file_exists(__DIR__.'/../../../config/nav.php')){
+            if(!file_exists(module_path('FootNav', '/Config/nav.php'))){
                 return $this->failed('配置文件不存在' . __DIR__);
             }else{
-                $myfile = fopen(__DIR__.'/../../../config/nav.php', "w");
+                $myfile = fopen(module_path('FootNav', '/Config/nav.php'), "w");
                 fwrite($myfile, "<?php");
                 fwrite($myfile, "\n");
                 fwrite($myfile, "return [");
